@@ -3,8 +3,8 @@ var swiper = new Swiper(".mySwiper", {
     spaceBetween: 20,
     loop: true,
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".swiper-button-left",
+        prevEl: ".swiper-button-right",
     },
     breakpoints: {
         // When the viewport width is 640px or less

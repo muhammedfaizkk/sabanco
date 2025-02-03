@@ -324,7 +324,9 @@ body p {
     gap: 1rem;
     justify-content: space-between;
 }
-
+.ourteam{
+    padding:80px 0px;
+}
 .whychooseus-card {
     background: linear-gradient(135deg, #000428, #004e92);
     color: white;
@@ -339,9 +341,10 @@ body p {
 
 .whychooseus-card:hover {
     background: black;
-    border: 2px solid white;
-    transform: scale(1.05);
+    box-shadow: 0 0 2px white; /* Adds glow instead of border */
+    transform: scale(1.10);
 }
+
 
 .whychooseus-card img {
     width: 50px;
@@ -470,7 +473,7 @@ body p {
 }
 
 .blog-main{
-    padding: 50px 0px;
+    padding: 80px 0px;
 }
 .blog-container {
     display: flex;
@@ -689,11 +692,7 @@ body p {
         width: 90%;
         padding: 15px;
     }
-    .values-section {
-        height: 50vh; /* Further reduced height on mobile */
-        padding: 2rem; /* Adjust padding */
-    }
-
+   
     .values-heading {
         font-size: 1.4rem;
     }
@@ -704,6 +703,15 @@ body p {
 
     .quote {
         font-size: 0.95rem;
+    }
+    .blog-main{
+        padding: 30px 0px;
+    }
+    .brands-main {
+        padding: 30px 0px;
+    }
+    .ourteam {
+        padding: 30px 0px;
     }
 }
 
@@ -747,8 +755,8 @@ body p {
         padding: 20px;
     }
     .values-section {
-        height: 60vh; /* Reduced height for smaller screens */
-        padding: 3rem; /* Adjust padding */
+        height: 80vh; /* Reduced height for smaller screens */
+        padding:0px; /* Adjust padding */
     }
 
     .values-heading {

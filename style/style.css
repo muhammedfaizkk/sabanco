@@ -25,6 +25,9 @@ body p {
     z-index: 1000;
     padding: 15px 0;
 }
+.nav-logs{
+    width: 250px;
+}
 
 .navbar-brand {
     font-size: 1.8rem;
@@ -177,7 +180,7 @@ body p {
 
 /* ========== Services Section ========== */
 .services-section {
-    padding: 50px 0px;
+    padding: 70px 0px;
     position: relative;
     background-color: black;
     text-align: center;
@@ -201,15 +204,13 @@ body p {
     position: relative;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease-in-out;
 }
 
 .swiper-slide:hover {
     transform: scale(1.05);
 }
 
-.swiper-slide img {
+.servicesswiperimg {
     width: 100%;
     height: 300px;
     object-fit: cover;
@@ -217,7 +218,7 @@ body p {
 }
 
 .Whatdowe {
-    padding: 50px 0px;
+    padding: 80px 0px;
 }
 
 /* Overlay Effect */
@@ -243,7 +244,7 @@ body p {
     opacity: 1;
 }
 
-/* Swiper Navigation Buttons */
+
 .swiper-button-left,
 .swiper-button-right {
     color: black !important;
@@ -273,6 +274,40 @@ body p {
 
 .swiper-button-left i,
 .swiper-button-right i {
+    font-size: 1.5rem;
+}
+
+
+
+.swiper-button-left-locations,
+.swiper-button-right-locations {
+    color: black !important;
+    background: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.3s;
+    z-index: 1000;
+}
+
+.swiper-button-left-locations {
+    left: 10px;
+}
+
+.swiper-button-right-locations {
+    right: 60px;
+}
+
+.swiper-button-left-locations:hover,
+.swiper-button-right-locations:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.swiper-button-left-locations i,
+.swiper-button-right-locations i {
     font-size: 1.5rem;
 }
 
@@ -323,10 +358,352 @@ body p {
 
 }
 
+
+.values-section {
+    position: relative;
+    background: url('../assets/bannertop.png') no-repeat center center/cover;
+    width: 100%;
+    height: 70vh;
+    text-align: center;
+    color: white;
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Overlay */
+.values-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* Dark overlay */
+}
+
+/* Content */
+.values-content {
+    position: relative;
+    z-index: 2;
+}
+
+.values-heading {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-align: start;
+}
+
+.values-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+/* Quote */
+.quote {
+    font-style: italic;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 15px;
+    text-align: center;
+}
+
+
+
+/* Locations */
+
+.Locationsswiperimg {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+
+
+.team-cards-wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.team-card {
+    width: 100%;
+    background: linear-gradient(45deg, #0000ff, #000033);
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid white;
+}
+
+.team-member-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.name-underline {
+    width: 50px;
+    height: 2px;
+    background-color: white;
+    margin: 5px auto;
+}
+
+.team-member-role {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.blog-main{
+    padding: 50px 0px;
+}
+.blog-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.blog-card {
+    background-color: #111;
+    border-radius: 10px;
+    padding: 15px;
+    width: 30%;
+    min-width: 280px;
+    text-align: left;
+}
+
+.blog-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.blog-card p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.contactformmain{
+    padding:80px 0px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+/* Contact Info Section */
+.contact-info {
+    width: 30%;
+    min-width: 280px;
+    text-align: left;
+}
+
+.contact-info div {
+    display: flex;
+    align-items: start;
+    margin-bottom: 20px;
+    
+}
+.diamondshape{
+    transform: rotate(45deg);
+    border: 2px solid blue;
+    border-radius: 8px;
+    padding: 10px;
+    margin-right:15px;
+}
+
+.contact-info i {
+    font-size: 24px;
+    color: blue;
+    
+}
+
+/* Contact Form Section */
+.contact-form {
+    width: 60%;
+    min-width: 280px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 48%;
+    padding: 12px;
+    margin: 5px;
+    border: 1px solid blue;
+    background: black;
+    color: white;
+    outline: none;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    width: 98%;
+    height: 120px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #00008B, #000044);
+    color: white;
+    border: none;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: linear-gradient(to right, #0000FF, #000088);
+}
+.footermain {
+    background-color: #000d5c;
+    color: white;
+    padding: 40px 0;
+}
+
+.footermain h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.footermain p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+.footer-logs{
+    width: 220px;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons i {
+    font-size: 20px;
+    color: white;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.copyright {
+    text-align: center;
+    padding: 10px;
+    background-color: #000a40;
+    font-size: 14px;
+    color: white;
+}
+
+
+/* brends */
+
+
+.brand-logos img {
+    height: 30px;
+}
+.swiper-button-next, .swiper-button-prev {
+    color: white;
+}
+.swiper-section {
+    margin-bottom: 40px;
+}
+.brandsLogimg{
+    height:100px;
+    width:100px;
+    object-fit: cover;
+}
+.custom-brands-swiper-1 {
+    position: relative;
+    width: 100%;
+    max-width: 1320px; /* Adjust if needed */
+    margin: auto;
+}
+.custom-brands-swiper-2 {
+    position: relative;
+    width: 100%;
+    max-width: 1320px; /* Adjust if needed */
+    margin: auto;
+}
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+}
+
+/* Navigation Buttons */
+.custom-swiper-prev-1,
+.custom-swiper-next-1 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.custom-swiper-prev-1 { left: 10px; }
+.custom-swiper-next-1 { right: 10px; }
+
+/* FontAwesome Icons */
+.custom-swiper-prev-1 i,
+.custom-swiper-next-1 i {
+    font-size: 20px;
+}
+.brands-main{
+    padding:80px 0px;
+}
+
 @media (max-width:526px) {
     .container {
         margin: 0px;
-        padding:0px 20px;
+        padding: 0px 20px;
+    }
+
+    .team-cards-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-card {
+        width: 90%;
+        padding: 15px;
+    }
+    .values-section {
+        height: 50vh; /* Further reduced height on mobile */
+        padding: 2rem; /* Adjust padding */
+    }
+
+    .values-heading {
+        font-size: 1.4rem;
+    }
+
+    .values-text {
+        font-size: 0.9rem;
+    }
+
+    .quote {
+        font-size: 0.95rem;
     }
 }
 
@@ -359,6 +736,58 @@ body p {
 
     .whychooseus-card {
         width: 100%;
+    }
+
+    .team-cards-wrapper {
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .team-card {
+        padding: 20px;
+    }
+    .values-section {
+        height: 60vh; /* Reduced height for smaller screens */
+        padding: 3rem; /* Adjust padding */
+    }
+
+    .values-heading {
+        font-size: 1.5rem;
+    }
+
+    .values-text {
+        font-size: 0.95rem;
+    }
+
+    .quote {
+        font-size: 1rem;
+    }
+    .blog-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blog-card {
+        width: 90%;
+    }
+    .contact-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-info, .contact-form {
+        width: 100%;
+    }
+
+    .contact-form input {
+        width: 95%;
+    }
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-section {
+        margin-bottom: 20px;
     }
 }
 

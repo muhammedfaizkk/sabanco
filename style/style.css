@@ -26,7 +26,7 @@ body {
 
 .AlumniSans {
     font-family: "Alumni Sans", serif;
-    letter-spacing: 8px;
+    letter-spacing: 3px;
     text-transform: uppercase;
 }
 
@@ -53,7 +53,6 @@ body {
     top: 0;
     z-index: 1000;
     font-size: 20px;
-    letter-spacing: 5px;
     transition: background 0.4s ease-in-out;
 
 }
@@ -72,15 +71,17 @@ body {
     font-weight: bold;
     color: white;
 }
+.navbar-nav{
 
+}
 .navbar-nav .nav-link {
     color: white;
     text-transform: uppercase;
     font-weight: 600;
     position: relative;
     padding-top: 10px;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 20px !important;
+    padding-left: 20px !important;
 }
 
 .navbar-nav .nav-link:hover,
@@ -185,7 +186,7 @@ body {
 
 .read-more-btn {
     display: inline-block;
-    padding: 12px 24px;
+    padding: 12px 30px;
     font-size: 1rem;
     font-weight: bold;
     color: white;
@@ -282,6 +283,9 @@ body {
     position: relative;
     border-radius: 15px;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .swiper-slide:hover {
@@ -580,6 +584,8 @@ body {
 
 .contactformmain {
     padding: 70px 0px;
+    max-width:1100px;
+    margin: auto;
 }
 
 .contact-container {
@@ -589,6 +595,8 @@ body {
     margin: auto;
     flex-wrap: wrap;
 }
+
+
 
 /* Contact Info Section */
 .contact-info {
@@ -634,13 +642,22 @@ body {
     outline: none;
     font-size: 16px;
 }
-
 .contact-form textarea {
-    width: 100%;
+    width: 98.2%;
     height: 120px;
+    padding: 12px;
+    margin: 5px;
+    border: 1px solid blue;
+    background: black;
+    color: white;
+    outline: none;
+    font-size: 16px;
 }
 
-.contact-form button {
+
+
+
+/* .contact-form button {
     width: 100%;
     padding: 12px;
     background: linear-gradient(to right, #00008B, #000044);
@@ -655,7 +672,7 @@ body {
 
 .contact-form button:hover {
     background: linear-gradient(to right, #0000FF, #000088);
-}
+} */
 
 .footermain {
     background-color: #000d5c;
@@ -725,8 +742,8 @@ body {
 
 .brandsLogimg {
     height: auto;
-    width: 80px;
-    object-fit: cover;
+    width: 100px !important;
+    object-fit: cover !important;
 }
 
 .custom-brands-swiper-1 {
@@ -745,10 +762,10 @@ body {
     margin: auto;
 }
 
-.swiper-slide img {
+/* .swiper-slide img {
     width: 100%;
     height: auto;
-}
+} */
 
 /* Navigation Buttons */
 .custom-swiper-prev-1,
@@ -782,13 +799,25 @@ body {
     padding: 70px 0px;
 }
 
+.country-title {
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin:10px 0px
+}
 
 @media (max-width: 526px) {
     .container {
         margin: 0;
         padding: 0 20px;
     }
-
+    .contact-form textarea {
+        width: 100%;
+        
+    }
     .team-cards-wrapper {
         flex-direction: column;
         align-items: center;
@@ -851,6 +880,11 @@ body {
         align-items: center;
         transition: background 0.3s;
         z-index: 1000;
+    }
+    .contact-container{
+        margin:0px 20px;
+        padding:0px;
+        
     }
 }
 

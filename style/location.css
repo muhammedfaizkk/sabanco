@@ -10,7 +10,7 @@ body {
 /* Hero Section */
 .heroaboutus {
     width: 100%;
-    height: 100vh;
+    height: 70vh;
     background: url('../assets/bannertop.png') no-repeat center center/cover;
     display: flex;
     justify-content: center;

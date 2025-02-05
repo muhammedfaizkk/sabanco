@@ -22,16 +22,16 @@ body {
     padding-top: 80px;
     color: white;
 }
-.heroaboutus::before {
+/* .heroaboutus::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)); /* Black gradient */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1));
     z-index: 1;
-}
+} */
 
 /* Location Section */
 .location-hero {

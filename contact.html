@@ -5,23 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
-
-    <!-- Bootstrap & Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-
-    <!-- Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/contact.css">
 </head>
 
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+    <nav class="navbar navbar-expand-lg fixed-top AlumniSans">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img class="nav-logo" src="./assets/logos/Logo.png" alt="Logo">
@@ -55,52 +49,138 @@
         </div>
     </section>
 
-    <!-- Swiper Image Slider -->
-    <section class="image-slider">
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="./assets/image1.jpg" alt="Image 1"></div>
-                <div class="swiper-slide"><img src="./assets/image2.jpg" alt="Image 2"></div>
-                <div class="swiper-slide"><img src="./assets/image3.jpg" alt="Image 3"></div>
+
+
+
+    <section class=" contact-container">
+        <!-- Left: Contact Form -->
+        <div class="contact-form">
+            <h2>LEAVE YOUR MESSAGE</h2>
+            <form>
+                <input type="text" placeholder="Full name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="text" placeholder="Contact us" required>
+                <textarea placeholder="Message" rows="4"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div class="contactpage-info">
+            <h2>GET IN TOUCH WITH US TODAY</h2>
+            <p>Still not convinced? Check us out on Instagram <b>@sabanand.co</b> for more updates and information!</p>
+
+            <!-- <div class="contact-cards">
+                <div class="info-card">
+                    <i class="fas fa-home"></i>
+                    <h3>OUR OFFICE</h3>
+                    <p>more updates and information!</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>HELPDESK</h3>
+                    <p>more updates and information!</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>FOR CALLS</h3>
+                    <p>more updates and information!</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>WORK HOURS</h3>
+                    <p>more updates and information!</p>
+                </div>
+
+            </div> -->
+
+
+
+
+            <div class="contact-cards">
+                <div class="info-card tall">
+                    <i class="fas fa-home"></i>
+                    <h3>OUR OFFICE</h3>
+                    <p>more updates and information!</p>
+                </div>
+                <div class="info-card short">
+                    <i class="fas fa-envelope"></i>
+                    <h3>HELPDESK</h3>
+                    <p>more updates and information!</p>
+                </div>
+                <div class="info-card short">
+                    <i class="fas fa-phone "></i>
+                    <h3>FOR CALLS</h3>
+                    <p>more updates and information!</p>
+                </div>
+                <div class="info-card tall">
+                    <i class="fas fa-clock"></i>
+                    <h3>WORK HOURS</h3>
+                    <p>more updates and information!</p>
+                </div>
+
             </div>
-            <!-- Navigation Buttons -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+
+
+
+
+
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="contact-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 contact-form">
-                    <h2>LEAVE YOUR MESSAGE</h2>
-                    <form>
-                        <input type="text" class="form-control" placeholder="Full name" required>
-                        <input type="email" class="form-control" placeholder="Email" required>
-                        <textarea class="form-control" rows="4" placeholder="Message" required></textarea>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                </div>
-                <div class="col-md-6 contact-info">
-                    <h2>GET IN TOUCH</h2>
-                    <p>Follow us on Instagram <strong>@sabanand.co</strong> for more updates!</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section>
+        <div class="footermain">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <!-- Company Info -->
+                    <div class="col-md-4 col-sm-6 d-flex flex-column">
+                        <img class="footer-logs" src="./assets/logos/Logo.png" alt="">
+                        <p>Designed for Tomorrow</p>
+                        <p>Saban & Co is the brokerage firm working under its parent company, Saban & Collective...</p>
+                    </div>
+
+                    <!-- Links -->
+                    <div class="col-md-3 col-sm-6 d-flex flex-column">
+                        <h2>Links</h2>
+                        <p>Home</p>
+                        <p>About</p>
+                        <p>Location</p>
+                        <p>Contact Us</p>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="col-md-4 col-sm-6 d-flex flex-column">
+                        <h2>Contact Info</h2>
+                        <p><i class="bi bi-envelope-fill"></i> info@iehgi89</p>
+                        <p><i class="bi bi-telephone-fill"></i> +7359739, +93875943875</p>
+                        <div class="social-icons">
+                            <i class="bi bi-instagram"></i>
+                            <i class="bi bi-palette"></i>
+                            <i class="bi bi-briefcase"></i>
+                            <i class="bi bi-facebook"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="copyright">&copy; 2025 SABAN.COM</div>
     </section>
 
-    <!-- Bootstrap & Swiper JS -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    
-    <script>
-        var swiper = new Swiper(".swiper-container", {
-            loop: true,
-            autoplay: { delay: 3000 },
-            navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" }
-        });
-    </script>
 </body>
 
 </html>

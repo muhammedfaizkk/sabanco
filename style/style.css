@@ -11,12 +11,18 @@ body {
     background-color: black;
 }
 
+body p{
+    text-align: justify;
+ }
 /* Animation */
 .scrollanimation {
     opacity: 0;
     transform: translateY(50px);
     /* Start position */
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.text-justify{
+    text-align: justify;
 }
 
 .show {
@@ -181,7 +187,6 @@ body {
 .about-text p {
     font-size: 1rem;
     line-height: 1.8;
-    color: #ddd;
 }
 
 .read-more-btn {
@@ -806,7 +811,21 @@ body {
     margin-bottom: 20px;
     text-transform: uppercase;
     font-weight: bold;
-    margin:10px 0px
+    margin: 10px 0;
+    position: relative;
+    padding-bottom: 5px; /* Space between text and underline */
+}
+
+.country-title::after {
+    content: "";
+    display: block;
+    width: 50px; /* Adjust width of the underline */
+    height: 2px; /* Adjust thickness */
+    background-color: white; /* Adjust color */
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%); /* Center the underline */
 }
 
 @media (max-width: 526px) {

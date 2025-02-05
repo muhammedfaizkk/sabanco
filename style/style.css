@@ -6,6 +6,21 @@
     box-sizing: border-box;
 
 }
+body{
+    background-color: black;
+}
+
+/* Animation */
+.scrollanimation {
+    opacity:0;
+    transform: translateY(50px); /* Start position */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.show {
+    opacity:1;
+    transform: translateY(0);
+}
 
 .AlumniSans {
     font-family: "Alumni Sans", serif;
@@ -172,15 +187,50 @@ body {
     font-weight: bold;
     color: white;
     background: linear-gradient(90deg, #0C00FF, #100627);
-    border: 2px solid white;
+    border: 2px solid transparent;
     border-radius: 5px;
     text-decoration: none;
-    transition: 0.3s;
+    position: relative;
+    overflow: visible;
+    transition: background 0.3s ease-in-out;
 }
 
-.read-more-btn:hover {
-    background: linear-gradient(90deg, #4D00FF, #0C00FF);
+/* Border animation - Hidden initially */
+.read-more-btn::before,
+.read-more-btn::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 2px solid white;
+    transition: all 0.4s ease-in-out;
+    border-radius: 5px;
+    box-sizing: border-box;
+    opacity: 0; /* Hide by default */
 }
+
+/* Top-left to bottom-right */
+.read-more-btn::before {
+    top: -2px;
+    left: -2px;
+    border-width: 2px 0 0 2px;
+}
+
+/* Bottom-right to top-left */
+.read-more-btn::after {
+    bottom: -2px;
+    right: -2px;
+    border-width: 0 2px 2px 0;
+}
+
+/* On hover, show and animate the borders */
+.read-more-btn:hover::before,
+.read-more-btn:hover::after {
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    opacity: 1; /* Show only on hover */
+}
+
 
 
 .about-image {
@@ -659,8 +709,8 @@ body {
 }
 
 .brandsLogimg {
-    height: 100px;
-    width: 100px;
+    height: auto;
+    width: 80px;
     object-fit: cover;
 }
 

@@ -12,3 +12,19 @@ window.addEventListener("scroll", function () {
         navbar.classList.remove("scrolled");
     }
 });
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const cards = document.querySelectorAll(".scrollanimation");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+            }
+        });
+    }, { threshold: 0.3 });
+
+    cards.forEach((scrollanimation) => observer.observe(scrollanimation));
+});

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Animation</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background: black;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Title */
+        .title {
+            font-size: 2rem;
+            margin-bottom: 50px;
+        }
+
+        /* Container for cards */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+
+        /* Card Styles */
+        .scrollanimation {
+            width: 300px;
+            height: 500px; /* Increased height to 500px */
+            background: linear-gradient(45deg, #0C00FF, #100627);
+            color: white;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            line-height: 500px; /* Center text vertically */
+            border-radius: 10px;
+            opacity: 0; /* Initially hidden */
+            transform: translateY(50px); /* Start position */
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        /* Animation class added by JS */
+        .show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="title">Scroll Down to See the Animation</h1>
+
+    <div class="container">
+        <div class="scrollanimation">Card 1</div>
+        <div class="scrollanimation">Card 2</div>
+        <div class="scrollanimation">Card 3</div>
+        <div class="scrollanimation">Card 4</div>
+        <div class="scrollanimation">Card 5</div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const cards = document.querySelectorAll(".scrollanimation");
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("show"); // Add animation class
+                    }
+                });
+            }, { threshold: 0.3 });
+
+            cards.forEach((scrollanimation) => observer.observe(scrollanimation));
+        });
+    </script>
+
+</body>
+</html>

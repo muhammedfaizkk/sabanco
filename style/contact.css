@@ -50,8 +50,8 @@ body {
 /* Left Side - Form */
 .contact-form {
     flex: 1;
-    padding: 40px;
-    background: #565766;
+    padding:30px 40px;
+    background: #000d5c;
     border-radius: 15px;
 }
 
@@ -77,22 +77,6 @@ body {
     outline: none;
 }
 
-/* .contact-form button {
-    padding: 12px;
-    border: none;
-    background: cyan;
-    color: white;
-    font-size: 16px;
-    text-transform: uppercase;
-    cursor: pointer;
-    border-radius: 5px;
-} */
-
-.contact-form button:hover {
-    background: #1a1a1a;
-}
-
-/* Right Side - Contact Info */
 .contactpage-info {
     flex: 1;
     padding: 40px;

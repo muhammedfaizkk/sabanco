@@ -7,6 +7,10 @@ var servicesSwiper = new Swiper(".mySwiper", {
     slidesPerView: 4,
     spaceBetween: 20,
     loop: true,
+    autoplay: {
+        delay: 3000, // Adjust time in milliseconds (3s in this case)
+        disableOnInteraction: false, // Ensures autoplay continues after user interaction
+    },
     navigation: {
         nextEl: ".swiper-button-right",
         prevEl: ".swiper-button-left",
@@ -18,10 +22,16 @@ var servicesSwiper = new Swiper(".mySwiper", {
     },
 });
 
+
 var locationsSwiper = new Swiper(".Mylocations", {
     slidesPerView: 4,
     spaceBetween: 20,
     loop: true,
+    autoplay: {
+        delay: 3000, // Adjust time in milliseconds (3s in this case)
+        disableOnInteraction: false, // Keeps autoplay running after user interaction
+    },
+    speed: 1000, // Smooth transition speed (1s)
     navigation: {
         nextEl: ".swiper-button-right-locations",
         prevEl: ".swiper-button-left-locations",

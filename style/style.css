@@ -1098,7 +1098,7 @@ body {
 
     /* Values Section */
     .values-section {
-        height: 300vh;
+        height:100vh;
         /* Reduced height for smaller screens */
         padding: 0;
     }

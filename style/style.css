@@ -8,7 +8,8 @@
 }
 
 body {
-    background-color: black;
+    color: black;
+    background-color: #f9f9f9;
 }
 
 body p{
@@ -200,10 +201,7 @@ body {
 }
 
 
-/* ========== About Section ========== */
 .about-section {
-    background-color: black;
-    color: white;
     position: relative;
     padding-top: 100px;
     padding-bottom: 50px;
@@ -273,20 +271,18 @@ body {
     border-width: 2px 0 0 2px;
 }
 
-/* Bottom-right to top-left */
 .read-more-btn::after {
     bottom: -2px;
     right: -2px;
     border-width: 0 2px 2px 0;
 }
 
-/* On hover, show and animate the borders */
+
 .read-more-btn:hover::before,
 .read-more-btn:hover::after {
     width: calc(100% + 4px);
     height: calc(100% + 4px);
     opacity: 1;
-    /* Show only on hover */
 }
 
 
@@ -311,9 +307,7 @@ body {
 .services-section {
     padding: 70px 0px;
     position: relative;
-    background-color: black;
     text-align: center;
-    color: white;
 }
 
 .header {
@@ -615,13 +609,14 @@ body {
 }
 
 .blog-card {
-    background-color: #111;
     border-radius: 10px;
     padding: 15px;
     width: 30%;
     min-width: 280px;
     text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 
 .blog-card img {
     width: 100%;
@@ -681,6 +676,7 @@ body {
 .contact-form {
     width: 60%;
     min-width: 280px;
+    
 }
 
 .contact-form input,
@@ -689,8 +685,8 @@ body {
     padding: 12px;
     margin: 5px;
     border: 1px solid blue;
-    background: black;
-    color: white;
+    background: rgb(247, 244, 244);
+    color: black;
     outline: none;
     font-size: 16px;
 }
@@ -700,7 +696,7 @@ body {
     padding: 12px;
     margin: 5px;
     border: 1px solid blue;
-    background: black;
+    background: rgb(247, 244, 244);
     color: white;
     outline: none;
     font-size: 16px;
@@ -874,6 +870,104 @@ body {
     left: 50%;
     transform: translateX(-50%); /* Center the underline */
 }
+       /* Container Styling */
+.service-container {
+    max-width: 1320px;
+    margin: auto;
+    padding: 50px 20px;
+   
+}
+
+/* Title Styling */
+.service-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 30px;
+    color: #222;
+}
+
+/* Service Item (Card) Styling */
+.service-item {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Hover Effect */
+.service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Icon Styling */
+.service-item i {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+/* Image Styling (Optional) */
+.service-item img {
+    max-width: 50px;
+    margin-bottom: 15px;
+}
+
+/* Service Heading */
+.service-item h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Service Description */
+.service-item p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Link Styling */
+.service-item a {
+    font-weight: bold;
+    color: #007bff;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.service-item a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+/* @media (max-width: 768px) {
+    .service-title {
+        font-size: 1.75rem;
+        text-align: center;
+    }
+
+    .service-item {
+        text-align: center;
+        padding: 25px;
+    }
+
+    .service-item h3 {
+        font-size: 1.15rem;
+    }
+
+    .service-item p {
+        font-size: 0.95rem;
+    }
+} */
 
 @media (max-width: 526px) {
     .container {
@@ -1004,7 +1098,7 @@ body {
 
     /* Values Section */
     .values-section {
-        height: 80vh;
+        height: 300vh;
         /* Reduced height for smaller screens */
         padding: 0;
     }

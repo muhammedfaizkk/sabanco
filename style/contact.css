@@ -1,7 +1,5 @@
 /* Global Styles */
 body {
-    background-color: black;
-    color: white;
     font-size: 16px;
     line-height: 1.6;
     font-family: "Akatab", serif;
@@ -22,7 +20,7 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     padding-top: 80px;
-    color: white
+    color:white;
 }
 
 /* .heroaboutus::before {
@@ -40,7 +38,6 @@ body {
 
 .contactpage-container {
     display: flex;
-    color: white;
     border-radius: 10px;
     overflow: hidden;
     padding: 70px 0px;
@@ -51,7 +48,6 @@ body {
 .contact-form {
     flex: 1;
     padding:30px 40px;
-    background: #000d5c;
     border-radius: 15px;
 }
 
@@ -80,7 +76,6 @@ body {
 .contactpage-info {
     flex: 1;
     padding: 40px;
-    background: black;
 }
 
 .contactpage-info h2 {
@@ -106,7 +101,7 @@ body {
 
 .info-card {
     background: transparent;
-    border: 2px dashed #888;
+    border: 2px dashed black;
     padding: 20px;
     height: 250px;
     text-align: start;

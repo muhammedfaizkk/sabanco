@@ -22,7 +22,12 @@ body {
 body p{
     text-align: justify;
  }
-/* Animation */
+
+ .navbar-nav .nav-link.active {
+    font-weight: bold;
+}
+
+
 .scrollanimation {
     opacity: 0;
     transform: translateY(50px);
@@ -99,12 +104,13 @@ body p{
 .navbar-nav .nav-link.active::after {
     content: "";
     display: block;
-    width: 100%;
+    width: 80%;
     height: 2px;
     background-color: white;
     position: absolute;
-    bottom: -5px;
-    left: 0;
+    bottom:1px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 /* Social Icons */
@@ -525,7 +531,6 @@ body p{
 
 .values-text {
     font-size: 1.1rem;
-    line-height: 1.4;
     margin-top: 10px;
     text-align: justify;
 }

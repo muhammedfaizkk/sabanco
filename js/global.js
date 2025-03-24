@@ -28,3 +28,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
     cards.forEach((scrollanimation) => observer.observe(scrollanimation));
 });
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    let currentLocation = window.location.pathname.split("/").pop(); // Get the current page filename
+    let navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
+    navLinks.forEach(link => {
+        if (link.getAttribute("href") === currentLocation) {
+            link.classList.add("active");
+        } else {
+            link.classList.remove("active");
+        }
+    });
+});

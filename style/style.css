@@ -878,40 +878,52 @@ body {
     padding: 50px 20px;
    
 }
-
 /* Title Styling */
 .service-title {
     font-size: 2rem;
     font-weight: bold;
     text-align: left;
-    margin-bottom: 30px;}
-
-    .service-item {
-        background: linear-gradient(135deg, #000428, #004e92);
-        border-radius: 10px;
-        padding: 20px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        text-align: center;
-        transition: transform 0.3s, box-shadow 0.3s;
-        min-height: 220px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-.service-item h1 {
-    padding: 10px;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    border: 2px dashed black;
-    border-radius: 50%;
-    text-align: center;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    font-weight: bold;
+    margin-bottom: 30px;
+    color: #004e92;
 }
+
+/* Text Content */
+.subheading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:white;
+}
+
+.values-list {
+    list-style: none;
+    padding: 0;
+}
+
+.values-list li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+/* Service Items (Cards) */
+.service-item {
+    background: linear-gradient(135deg, #000428, #004e92);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: white;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Numbering */
 .service-number {
     font-size: 22px;
     font-weight: bold;
@@ -923,54 +935,39 @@ body {
     height: 50px;
     line-height: 50px;
     text-align: center;
-    margin-right: 15px;
-}
-
-/* Hover Effect */
-.service-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
 /* Icon Styling */
-.service-item i {
-    font-size: 2.5rem;
-    color: #007bff;
-    margin-bottom: 15px;
-}
-
-/* Image Styling (Optional) */
-.service-item img {
-    max-width: 50px;
-    margin-bottom: 15px;
+.icon-style {
+    font-size: 2rem;
+    color: #f8f9fa;
 }
 
 /* Service Heading */
-.service-item h3 {
-    font-size: 1.25rem;
+.service-heading {
+    font-size: 1.2rem;
     font-weight: bold;
-    color:white;
-    margin-bottom: 10px;
 }
 
-/* Service Description */
-.service-item p {
-    color: #666;
-    font-size: 1rem;
-    line-height: 1.6;
-}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service-container {
+        padding: 15px;
+    }
 
-/* Link Styling */
-.service-item a {
-    font-weight: bold;
-    color: #007bff;
-    text-decoration: none;
-    margin-top: 10px;
-    display: inline-block;
-}
+    .service-title {
+        text-align: center;
+    }
 
-.service-item a:hover {
-    text-decoration: underline;
+    .service-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .service-number {
+        margin-bottom: 10px;
+    }
 }
 
 /* Responsive Design */

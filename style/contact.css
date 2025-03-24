@@ -102,7 +102,7 @@ body {
 
 .info-card {
     background: transparent;
-    border: 2px dashed black;
+    border: 2px dashed white;
     padding: 20px;
     height: 250px;
     text-align: start;

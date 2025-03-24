@@ -9,8 +9,9 @@
 }
 
 body {
-    color: black;
-    background: linear-gradient(to right, rgba(212, 241, 255, 0.9), white);
+    color: white;
+    /* background: linear-gradient(to right, rgba(212, 241, 255, 0.9), white); */
+    background: #180945;
 
 }
 
@@ -883,9 +884,7 @@ body {
     font-size: 2rem;
     font-weight: bold;
     text-align: left;
-    margin-bottom: 30px;
-    color: #222;
-}
+    margin-bottom: 30px;}
 
 /* Service Item (Card) Styling */
 .service-item {

@@ -8,10 +8,14 @@
 
 }
 
+
+
+
 body {
     color: white;
     /* background: linear-gradient(to right, rgba(212, 241, 255, 0.9), white); */
     background: #180945;
+    line-height: 1.6;
 
 }
 
@@ -44,13 +48,6 @@ body p{
     font-family: "Akatab", serif;
     font-weight: 400;
     font-style: normal;
-}
-
-body {
-    font-size: 16px;
-    line-height: 1.6;
-    font-family: "Akatab", serif;
-
 }
 
 
@@ -1080,6 +1077,10 @@ body {
         text-align: center;
         gap: 50px;
     }
+    body {
+        line-height: 1;
+    
+    }
 
     .about-section {
         padding: 60px 0 30px;
@@ -1120,7 +1121,7 @@ body {
 
     /* Values Section */
     .values-section {
-        height:100vh;
+        height:130vh;
         /* Reduced height for smaller screens */
         padding: 0;
     }
